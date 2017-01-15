@@ -1,0 +1,22 @@
+#
+# DEBUG LAUNCH SPECFICATION 
+#
+
+# -include: ~${p}.bndrun
+
+-runpath: biz.aQute.remote.launcher
+
+-runremote: test;\
+	shell   =   -1; \
+	jdb     =   5005; \
+	host    =   localhost; \
+	agent   =   29998; \
+	timeout =   10000
+
+-runproperties: gosh.args=--noshutdown
+
+-runrequires.debug:  \
+	${debug-bundles}
+
+-runbundles: \
+	us.coastalhacking.semiotics.transform.provider

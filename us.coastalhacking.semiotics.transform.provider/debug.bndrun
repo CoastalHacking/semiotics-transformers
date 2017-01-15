@@ -11,7 +11,7 @@
 	jdb     =   5005; \
 	host    =   localhost; \
 	agent   =   29998; \
-	timeout =   10000
+	timeout =   10
 
 -runproperties: gosh.args=--noshutdown
 

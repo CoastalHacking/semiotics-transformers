@@ -27,15 +27,10 @@
 		pretty = true; \
 		local = ${build}/release
 
--plugin.5.SemioticsApi: \
+-plugin.5.Semiotics: \
 	aQute.bnd.repository.p2.provider.P2Repository; \
 		url = file:///Users/macgyver/git/CoastalHacking/semiotics-xcore/releng/us.coastalhacking.semiotics.xcore.update/target/repository/; \
-	    name = SemioticsApi
-	    
--plugin.6.EmfCore: \
-	aQute.bnd.repository.p2.provider.P2Repository; \
-		url = http://download.eclipse.org/modeling/emf/emf/updates/2.10.x/core/S201501230452/; \
-		name = EmfCore
+	    name = Semiotics
 
 -releaserepo: Release
 -baselinerepo: Release

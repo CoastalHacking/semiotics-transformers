@@ -2,8 +2,12 @@
 	osgi.annotation;version=6.0.1,\
 	osgi.core;version=6.0,\
 	osgi.cmpn;version=6.0,\
-	org.eclipse.emf.common;version=2.10,\
-	us.coastalhacking.semiotics.xcore.model;version=0.1
+	us.coastalhacking.semiotics.xcore.model;version=0.1,\
+	org.eclipse.jface,\
+	org.eclipse.core.runtime,\
+	org.eclipse.jdt.core,\
+	org.eclipse.emf.ecore,\
+	org.eclipse.emf.common
 
 -testpath: \
 	${junit}
@@ -14,4 +18,5 @@ javac.target: 1.8
 Bundle-Version: 0.0.0.${tstamp}
 Private-Package: \
 	us.coastalhacking.semiotics.transform.controller.provider,\
-	us.coastalhacking.semiotics.transform.service.provider
+	us.coastalhacking.semiotics.transform.converter.provider,\
+	us.coastalhacking.semiotics.transform.transformer.provider
